@@ -33,7 +33,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        reviews.forEach { coffeeShop in
+        reviews.forEach { [weak self] coffeeShop in
+            // added weak closure to avoid memory leaks.
+            guard let self = self else { return }
             guard let containerView = CoffeeShopItemView.fromNib() as? CoffeeShopItemView else {
                 fatalError("Failed loading CoffeeShopItemView")
             }
