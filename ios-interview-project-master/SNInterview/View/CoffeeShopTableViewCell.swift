@@ -16,7 +16,9 @@ class CoffeeShopTableViewCell: UITableViewCell {
     @IBOutlet weak var ratingLabel: UILabel!
     
     static let reuseIdentifier = "CoffeeShopCell"
-
+    
+    /// Set the Cell items based on the CoffeeShop
+    /// - Parameter shop: Coffee Shop object
     func set(shop: CoffeeShop) {
         nameLabel.text = shop.name
         reviewLabel.text = shop.review

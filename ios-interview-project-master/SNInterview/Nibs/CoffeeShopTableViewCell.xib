@@ -27,7 +27,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80 %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmV-I4-37A" userLabel="Rating">
-                    <rect key="frame" x="298" y="19" width="50" height="14.5"/>
+                    <rect key="frame" x="298" y="20" width="50" height="14.5"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="MIP-VS-sWj"/>
                     </constraints>
@@ -39,7 +39,7 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="tCp-fr-z45" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="1kx-1K-vht"/>
-                <constraint firstItem="KmV-I4-37A" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="19" id="A48-08-cOC"/>
+                <constraint firstItem="KmV-I4-37A" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="A48-08-cOC"/>
                 <constraint firstItem="0Lb-wt-SgU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="KOV-Hq-Znd"/>
                 <constraint firstItem="tCp-fr-z45" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="LRu-7t-jsM"/>
                 <constraint firstAttribute="trailing" secondItem="0Lb-wt-SgU" secondAttribute="trailing" constant="20" id="T5t-W7-RTd"/>
