@@ -15,15 +15,11 @@ class ReviewDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.isNavigationBarHidden = false
-        self.navigationItem.backBarButtonItem?.title = ""
+        configureViewController()
+        configureReviewLabel()
+    }
 
-        if let coffeeShop = coffeeShop {
-                self.navigationItem.title = coffeeShop.name
-            self.reviewLabel.text = coffeeShop.review
-        }
-        
-        self.view.backgroundColor = .white
+    fileprivate func configureReviewLabel() {
         self.view.addSubview(reviewLabel)
         reviewLabel.numberOfLines = 10
         reviewLabel.contentMode = .topLeft
@@ -34,5 +30,16 @@ class ReviewDetailViewController: UIViewController {
             reviewLabel.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 30),
         ])
     }
+    
+    fileprivate func configureViewController() {
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationItem.backBarButtonItem?.title = ""
 
+        if let coffeeShop = coffeeShop {
+                self.navigationItem.title = coffeeShop.name
+            self.reviewLabel.text = coffeeShop.review
+        }
+        
+        self.view.backgroundColor = .white
+    }
 }
