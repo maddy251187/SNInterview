@@ -14,9 +14,10 @@
 		576E9C73234E7B9C00199B25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576E9C71234E7B9C00199B25 /* LaunchScreen.storyboard */; };
 		576E9C7E234E7B9C00199B25 /* SNInterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E9C7D234E7B9C00199B25 /* SNInterviewTests.swift */; };
 		576E9C89234EC08400199B25 /* CoffeeShops.json in Resources */ = {isa = PBXBuildFile; fileRef = 576E9C88234EC08400199B25 /* CoffeeShops.json */; };
-		576E9C8B234EF0D800199B25 /* CoffeeShopItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 576E9C8A234EF0D800199B25 /* CoffeeShopItemView.xib */; };
-		576E9C8D234EF29E00199B25 /* CoffeeShopItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E9C8C234EF29E00199B25 /* CoffeeShopItemView.swift */; };
+		576E9C8B234EF0D800199B25 /* CoffeeShopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 576E9C8A234EF0D800199B25 /* CoffeeShopTableViewCell.xib */; };
+		576E9C8D234EF29E00199B25 /* CoffeeShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E9C8C234EF29E00199B25 /* CoffeeShopTableViewCell.swift */; };
 		576E9C8F234EF35F00199B25 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E9C8E234EF35F00199B25 /* UIView+Additions.swift */; };
+		979B531223E7D1E300676EBF /* CoffeeShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979B531123E7D1E300676EBF /* CoffeeShop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +42,11 @@
 		576E9C7D234E7B9C00199B25 /* SNInterviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNInterviewTests.swift; sourceTree = "<group>"; };
 		576E9C7F234E7B9C00199B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		576E9C88234EC08400199B25 /* CoffeeShops.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CoffeeShops.json; sourceTree = "<group>"; };
-		576E9C8A234EF0D800199B25 /* CoffeeShopItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeShopItemView.xib; sourceTree = "<group>"; };
-		576E9C8C234EF29E00199B25 /* CoffeeShopItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopItemView.swift; sourceTree = "<group>"; };
+		576E9C8A234EF0D800199B25 /* CoffeeShopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoffeeShopTableViewCell.xib; sourceTree = "<group>"; };
+		576E9C8C234EF29E00199B25 /* CoffeeShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopTableViewCell.swift; sourceTree = "<group>"; };
 		576E9C8E234EF35F00199B25 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
 		57DA91CB2354DB6C00A35DFA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		979B531123E7D1E300676EBF /* CoffeeShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,14 +91,15 @@
 				576E9C68234E7B9900199B25 /* AppDelegate.swift */,
 				57DA91CB2354DB6C00A35DFA /* README.md */,
 				576E9C6A234E7B9900199B25 /* ViewController.swift */,
-				576E9C8C234EF29E00199B25 /* CoffeeShopItemView.swift */,
-				576E9C8A234EF0D800199B25 /* CoffeeShopItemView.xib */,
+				576E9C8C234EF29E00199B25 /* CoffeeShopTableViewCell.swift */,
+				576E9C8A234EF0D800199B25 /* CoffeeShopTableViewCell.xib */,
 				576E9C8E234EF35F00199B25 /* UIView+Additions.swift */,
 				576E9C88234EC08400199B25 /* CoffeeShops.json */,
 				576E9C6C234E7B9900199B25 /* Main.storyboard */,
 				576E9C6F234E7B9C00199B25 /* Assets.xcassets */,
 				576E9C71234E7B9C00199B25 /* LaunchScreen.storyboard */,
 				576E9C74234E7B9C00199B25 /* Info.plist */,
+				979B531123E7D1E300676EBF /* CoffeeShop.swift */,
 			);
 			path = SNInterview;
 			sourceTree = "<group>";
@@ -192,7 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				576E9C73234E7B9C00199B25 /* LaunchScreen.storyboard in Resources */,
-				576E9C8B234EF0D800199B25 /* CoffeeShopItemView.xib in Resources */,
+				576E9C8B234EF0D800199B25 /* CoffeeShopTableViewCell.xib in Resources */,
 				576E9C89234EC08400199B25 /* CoffeeShops.json in Resources */,
 				576E9C70234E7B9C00199B25 /* Assets.xcassets in Resources */,
 				576E9C6E234E7B9900199B25 /* Main.storyboard in Resources */,
@@ -214,9 +217,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				576E9C8F234EF35F00199B25 /* UIView+Additions.swift in Sources */,
+				979B531223E7D1E300676EBF /* CoffeeShop.swift in Sources */,
 				576E9C6B234E7B9900199B25 /* ViewController.swift in Sources */,
 				576E9C69234E7B9900199B25 /* AppDelegate.swift in Sources */,
-				576E9C8D234EF29E00199B25 /* CoffeeShopItemView.swift in Sources */,
+				576E9C8D234EF29E00199B25 /* CoffeeShopTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
