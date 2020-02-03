@@ -16,7 +16,6 @@ class CoffeeShopTableViewCell: UITableViewCell {
     
     static let reuseIdentifier = "CoffeeShopCell"
 
-    
     func set(shop: CoffeeShop) {
         nameLabel.text = shop.name
         reviewLabel.text = shop.review
