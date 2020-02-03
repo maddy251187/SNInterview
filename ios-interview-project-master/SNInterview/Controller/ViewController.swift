@@ -23,7 +23,6 @@ class ViewController: UIViewController {
         self.coffeeTableView.delegate = self
         self.coffeeTableView.dataSource = self
         self.coffeeTableView.register(UINib(nibName:"CoffeeShopTableViewCell", bundle: nil), forCellReuseIdentifier: CoffeeShopTableViewCell.reuseIdentifier)
-        
     }
     
     fileprivate func getReviews() {
@@ -51,11 +50,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
         let coffeeShop = coffeeShopViewModel.getReview(for: indexPath.row)
         coffeeCell.set(shop: coffeeShop)
+        coffeeCell.accessoryType = .disclosureIndicator
         return coffeeCell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let coffeeShop = coffeeShopViewModel.getReview(for: indexPath.row)
+        let reviewDetailVC = ReviewDetailViewController()
+        reviewDetailVC.coffeeShop = coffeeShop
+        self.navigationController?.pushViewController(reviewDetailVC, animated: true)
     }
     
 }

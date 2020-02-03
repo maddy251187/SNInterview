@@ -20,6 +20,7 @@
 		979B531223E7D1E300676EBF /* CoffeeShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979B531123E7D1E300676EBF /* CoffeeShop.swift */; };
 		979B531423E7D8D400676EBF /* CoffeeShopManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979B531323E7D8D400676EBF /* CoffeeShopManager.swift */; };
 		979B531F23E7DB8900676EBF /* CoffeeShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979B531E23E7DB8900676EBF /* CoffeeShopViewModel.swift */; };
+		97D6725123E7EF6500C78C10 /* ReviewDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D6725023E7EF6500C78C10 /* ReviewDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		979B531123E7D1E300676EBF /* CoffeeShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShop.swift; sourceTree = "<group>"; };
 		979B531323E7D8D400676EBF /* CoffeeShopManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopManager.swift; sourceTree = "<group>"; };
 		979B531E23E7DB8900676EBF /* CoffeeShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopViewModel.swift; sourceTree = "<group>"; };
+		97D6725023E7EF6500C78C10 /* ReviewDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				576E9C6A234E7B9900199B25 /* ViewController.swift */,
+				97D6725023E7EF6500C78C10 /* ReviewDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				979B531223E7D1E300676EBF /* CoffeeShop.swift in Sources */,
 				576E9C6B234E7B9900199B25 /* ViewController.swift in Sources */,
 				576E9C69234E7B9900199B25 /* AppDelegate.swift in Sources */,
+				97D6725123E7EF6500C78C10 /* ReviewDetailViewController.swift in Sources */,
 				576E9C8D234EF29E00199B25 /* CoffeeShopTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

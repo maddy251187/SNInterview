@@ -19,6 +19,6 @@ class CoffeeShopTableViewCell: UITableViewCell {
     func set(shop: CoffeeShop) {
         nameLabel.text = shop.name
         reviewLabel.text = shop.review
-        ratingLabel.text = String(shop.rating)
+        ratingLabel.text = "\(shop.rating) Stars"
     }
 }
