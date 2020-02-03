@@ -7,7 +7,8 @@
 
 import UIKit
 
-// rename CoffeeShopItemView to CoffeeShopTableViewCell as it gives more readibility and understanding that its a table view cell.
+
+/// The Custom cell for the shwoing the coffee shop details. Renamed CoffeeShopItemView to CoffeeShopTableViewCell as it gives more readibility and understanding that its a table view cell.
 class CoffeeShopTableViewCell: UITableViewCell {
         
     @IBOutlet weak var nameLabel: UILabel!

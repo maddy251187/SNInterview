@@ -18,7 +18,7 @@ class ReviewDetailViewController: UIViewController {
         configureViewController()
         configureReviewLabel()
     }
-
+    
     fileprivate func configureReviewLabel() {
         self.view.addSubview(reviewLabel)
         reviewLabel.numberOfLines = 10

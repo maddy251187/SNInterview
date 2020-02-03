@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Our Coffee Shop model which has properties like name, review and rating.
 struct CoffeeShop: Codable {
     let name: String
     let review: String
